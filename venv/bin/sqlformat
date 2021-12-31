@@ -1,4 +1,4 @@
-#!/home/ankit/simpleisbetter/myprojects/venv/bin/python
+#!/home/ankit/simpleisbetter/techDiscussion/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
