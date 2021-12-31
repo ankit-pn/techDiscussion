@@ -1,13 +1,21 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}My account{% endblock %}
+
+{% block stylesheet %} 
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+<link  href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css" >
+{% endblock stylesheet %}
 
 {% block breadcrumb %}
   <li class="breadcrumb-item active">My account</li>
 {% endblock %}
 
 {% block content %}
-  <div class="row">
+  <div class="row" id='b'>
     <div class="col-lg-6 col-md-8 col-sm-10">
       <form method="post" novalidate>
         {% csrf_token %}

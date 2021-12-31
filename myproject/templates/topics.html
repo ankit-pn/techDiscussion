@@ -4,9 +4,18 @@
 {% block title %}
   {{ board.name }} - {{ block.super }}
 {% endblock %}
+{% load static %}
+{% block stylesheet %} 
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+<link  href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css" >
+{% endblock stylesheet %}
+
 
 {% block breadcrumb %}
-  <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
+  <li class="breadcrumb-item"><a href="{% url 'home' %}">Domain</a></li>
   <li class="breadcrumb-item active">{{ board.name }}</li>
 {% endblock %}
 
@@ -27,7 +36,7 @@
   <tbody>
     {% for topic in topics %}
     {% url 'topic_posts' board.pk topic.pk as topic_url %}
-      <tr>
+      <tr id='b'>
         <td>
           <p class="mb-0">
             <a href="{{ topic_url }}">{{ topic.subject }}</a>

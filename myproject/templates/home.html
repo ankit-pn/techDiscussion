@@ -1,14 +1,23 @@
+
 {% extends 'base.html' %}
+{% load static %}
+{% block stylesheet %} 
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+<link  href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css" >
+{% endblock stylesheet %}
 
 {% block breadcrumb %}
-  <li class="breadcrumb-item active">Boards</li>
+  <li class="breadcrumb-item active">Tech Discussion Forum</li>
 {% endblock %}
 
 {% block content %}
   <table class="table">
     <thead class="thead-inverse">
       <tr>
-        <th>Board</th>
+        <th>Domain</th>
         <th>Posts</th>
         <th>Topics</th>
         <th>Last Post</th>
@@ -16,10 +25,10 @@
     </thead>
     <tbody>
       {% for board in boards %}
-        <tr>
+        <tr id='b'>
           <td>
-            <a href="{% url 'board_topics' board.pk %}">{{ board.name }}</a>
-            <small class="text-muted d-block">{{ board.description }}</small>
+            <a href="{% url 'board_topics' board.pk %}" >{{ board.name }}</a>
+            <small class="text-muted d-block " >{{ board.description }}</small>
           </td>
           <td class="align-middle">
             {{ board.get_posts_count }}
