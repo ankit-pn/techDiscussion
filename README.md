@@ -18,7 +18,7 @@ Topcis
 
 
 Login 
-![alt text](https://github.com/ankit-pn/techDiscussion/blob/master/ScreenShots/1.png?)
+![alt text](https://github.com/ankit-pn/techDiscussion/blob/master/ScreenShots/2.png?)
 
 
 Signup
