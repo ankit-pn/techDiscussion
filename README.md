@@ -9,20 +9,33 @@ Backend is implemted using django and frontend using bootstrap , css , html.
 Visit it on - [Visit Here](http://www.tech-discussion.com)
 
 
-Home Screen 
+**Home Screen**
+
 ![alt text](https://github.com/ankit-pn/techDiscussion/blob/master/ScreenShots/1.png?)
 
 
-Topcis
+**Topcis**
+
 ![alt text](https://github.com/ankit-pn/techDiscussion/blob/master/ScreenShots/0.png)
 
 
-Login 
+**Test Topic**
+
 ![alt text](https://github.com/ankit-pn/techDiscussion/blob/master/ScreenShots/2.png?)
 
 
-Signup
+**Reply**
+
 ![alt text](https://github.com/ankit-pn/techDiscussion/blob/master/ScreenShots/3.png?)
+
+**Login**
+
+![alt text](https://github.com/ankit-pn/techDiscussion/blob/master/ScreenShots/login.png?)
+
+**Sign-up**
+
+![alt text](https://github.com/ankit-pn/techDiscussion/blob/master/ScreenShots/sign.png?)
+
 
 
 
