@@ -6,6 +6,10 @@ A web discussion forum for discussion about any topics related to tech.
 
 Backend is implemted using django and frontend using bootstrap , css , html.
 
+
+!!!Currently the demo website is temporarily closed!!!
+
+
 Visit it on - [Visit Here](http://www.tech-discussion.live)
 
 
